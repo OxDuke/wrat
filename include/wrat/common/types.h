@@ -5,7 +5,7 @@
 
 namespace wrat
 {
-	
+
 template <typename Scalar>
 using Vector3 = Eigen::Matrix<Scalar, 3, 1>;
 
@@ -24,5 +24,13 @@ using Rotation3 = Eigen::Matrix<Scalar, 3, 3>;
 
 template <typename Scalar>
 using Transform3 = Eigen::Transform<Scalar, 3, Eigen::Isometry>;
+
+
+using WRAT_REAL = double;
+
+using SE3 = Transform3<WRAT_REAL>;
+
+
+
 }
 #endif //WRATR_COMMON_TYPES_H_
